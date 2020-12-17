@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, EventEmitter, Output } from '@angular/core'
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html'
@@ -6,4 +6,8 @@ import { Component } from '@angular/core'
 
 export class HeaderComponent {
     collapsed = true;
+    @Output() selectedComponent=new EventEmitter<string>()
+    OnSelect(selected:string){
+        this.selectedComponent.emit(selected)
+    }
 }
