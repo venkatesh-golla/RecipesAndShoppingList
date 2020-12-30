@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'RecipesAndShoppingList';
-  loadedComponent='recipe'
-  OnNavigate(selected:string){
-    this.loadedComponent=selected
-  }
+  title = 'RecipesAndShoppingList'
 }
