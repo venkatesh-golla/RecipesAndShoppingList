@@ -14,6 +14,5 @@ export class RecipeResolverService implements Resolve<Recipe[]>{
             return this.dataStorageService.fetchRecipes()
         }
         return recipes
-
     }
 }
